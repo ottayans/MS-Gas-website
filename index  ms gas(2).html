@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>MS Gas Stove Service & Pipeline Installation – Cherthala, Kerala</title>
+<meta name="description" content="Expert gas stove repair and pipeline installation in Cherthala, Kerala. Available 24/7. Call 090377 69378."/>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --fire:#f85c1b;
+  --fire2:#ffa33a;
+  --dark:#0e0e14;
+  --card:#16161f;
+  --card2:#1c1c28;
+  --border:rgba(255,255,255,0.07);
+  --text:#e8e8f0;
+  --muted:#7f7f99;
+  --green:#22c55e;
+  --radius:14px;
+}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--dark);color:var(--text);overflow-x:hidden}
+
+/* ─── SCROLLBAR ─── */
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:var(--dark)}
+::-webkit-scrollbar-thumb{background:var(--fire);border-radius:3px}
+
+/* ─── NAV ─── */
+nav{
+  position:fixed;top:0;width:100%;z-index:999;
+  background:rgba(14,14,20,0.92);
+  backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--border);
+  padding:0 48px;
+  display:flex;align-items:center;justify-content:space-between;
+  height:68px;
+}
+.nav-brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.nav-brand img{width:44px;height:44px;border-radius:50%;border:2px solid var(--fire);object-fit:cover}
+.nav-brand-text{display:flex;flex-direction:column;line-height:1.1}
+.nav-brand-text strong{font-family:'Oswald',sans-serif;font-size:1rem;letter-spacing:1.5px;color:#fff}
+.nav-brand-text span{font-size:0.7rem;color:var(--fire);letter-spacing:1px;text-transform:uppercase}
+.nav-links{display:flex;gap:32px;list-style:none}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:0.88rem;font-weight:500;letter-spacing:.5px;transition:color .2s}
+.nav-links a:hover{color:var(--fire)}
+.nav-cta{
+  background:var(--fire);color:#fff;text-decoration:none;
+  padding:9px 22px;border-radius:8px;font-weight:600;font-size:0.88rem;
+  letter-spacing:.5px;transition:all .2s;
+  box-shadow:0 0 20px rgba(248,92,27,0.35);
+}
+.nav-cta:hover{background:#e04a0a;transform:translateY(-1px)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+.hamburger span{width:24px;height:2px;background:var(--text);border-radius:2px;transition:all .3s}
+.mobile-menu{display:none;position:fixed;top:68px;left:0;right:0;background:rgba(14,14,20,0.98);padding:24px 32px;border-bottom:1px solid var(--border);z-index:998}
+.mobile-menu.open{display:block}
+.mobile-menu a{display:block;padding:12px 0;color:var(--text);text-decoration:none;font-size:1.05rem;font-weight:500;border-bottom:1px solid var(--border)}
+.mobile-menu a:last-child{border-bottom:none}
+
+/* ─── HERO ─── */
+.hero{
+  min-height:100vh;padding:120px 48px 80px;
+  display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;
+  position:relative;overflow:hidden;
+}
+.hero-bg{
+  position:absolute;inset:0;
+  background:radial-gradient(ellipse 80% 80% at 65% 50%, rgba(248,92,27,0.09) 0%, transparent 70%),
+             radial-gradient(ellipse 40% 60% at 80% 20%, rgba(255,163,58,0.06) 0%, transparent 50%);
+}
+.hero-grid-lines{
+  position:absolute;inset:0;
+  background-image:linear-gradient(rgba(255,255,255,0.02) 1px,transparent 1px),
+                   linear-gradient(90deg,rgba(255,255,255,0.02) 1px,transparent 1px);
+  background-size:60px 60px;
+}
+.hero-content{position:relative;z-index:1}
+.hero-tag{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(248,92,27,0.12);border:1px solid rgba(248,92,27,0.3);
+  padding:6px 14px;border-radius:100px;margin-bottom:22px;
+  font-size:0.78rem;font-weight:600;letter-spacing:1.5px;
+  color:var(--fire);text-transform:uppercase;
+}
+.live-dot{width:7px;height:7px;background:#22c55e;border-radius:50%;animation:blink 1.4s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+.hero h1{
+  font-family:'Oswald',sans-serif;
+  font-size:clamp(2.8rem,5.5vw,4.8rem);
+  line-height:1.05;letter-spacing:1px;
+  color:#fff;margin-bottom:22px;
+}
+.hero h1 em{font-style:normal;color:var(--fire)}
+.hero-desc{font-size:1.05rem;color:var(--muted);line-height:1.8;margin-bottom:36px;max-width:480px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:48px}
+.btn-fire{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--fire);color:#fff;text-decoration:none;
+  padding:14px 28px;border-radius:10px;font-weight:600;font-size:1rem;
+  transition:all .2s;box-shadow:0 4px 24px rgba(248,92,27,0.4);
+}
+.btn-fire:hover{background:#e04a0a;transform:translateY(-2px);box-shadow:0 8px 30px rgba(248,92,27,0.5)}
+.btn-wa{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(37,211,102,0.12);border:1.5px solid rgba(37,211,102,0.35);
+  color:#22c55e;text-decoration:none;
+  padding:14px 28px;border-radius:10px;font-weight:600;font-size:1rem;
+  transition:all .2s;
+}
+.btn-wa:hover{background:rgba(37,211,102,0.2);transform:translateY(-2px)}
+.hero-stats{display:flex;gap:0;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;width:fit-content}
+.h-stat{padding:18px 32px;text-align:center}
+.h-stat:not(:last-child){border-right:1px solid var(--border)}
+.h-stat-num{font-family:'Oswald',sans-serif;font-size:2rem;color:var(--fire);letter-spacing:1px;line-height:1}
+.h-stat-label{font-size:0.72rem;color:var(--muted);letter-spacing:1px;text-transform:uppercase;margin-top:4px}
+
+/* Hero illustration */
+.hero-visual{position:relative;z-index:1;display:flex;align-items:center;justify-content:center}
+.hero-visual svg{filter:drop-shadow(0 20px 60px rgba(248,92,27,0.2));width:100%;max-width:500px}
+
+/* ─── SECTION COMMONS ─── */
+section{padding:100px 48px}
+.section-head{margin-bottom:56px}
+.section-tag{font-size:0.75rem;letter-spacing:2.5px;text-transform:uppercase;color:var(--fire);font-weight:600;margin-bottom:10px}
+.section-title{font-family:'Oswald',sans-serif;font-size:clamp(1.9rem,3.5vw,2.8rem);letter-spacing:1px;color:#fff;margin-bottom:12px}
+.section-sub{color:var(--muted);font-size:1rem;line-height:1.8;max-width:540px}
+.divider{width:48px;height:3px;background:var(--fire);border-radius:2px;margin-top:16px}
+
+/* ─── SERVICES ─── */
+#services{background:var(--card)}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.svc{
+  background:var(--dark);border:1px solid var(--border);
+  border-radius:var(--radius);padding:32px 28px;
+  transition:all .3s;position:relative;overflow:hidden;
+}
+.svc::after{
+  content:'';position:absolute;bottom:0;left:0;width:100%;height:3px;
+  background:linear-gradient(90deg,var(--fire),var(--fire2));
+  transform:scaleX(0);transform-origin:left;transition:transform .3s;
+}
+.svc:hover{border-color:rgba(248,92,27,0.25);transform:translateY(-5px)}
+.svc:hover::after{transform:scaleX(1)}
+.svc-icon{
+  width:56px;height:56px;background:rgba(248,92,27,0.1);
+  border-radius:12px;display:flex;align-items:center;justify-content:center;
+  margin-bottom:20px;font-size:1.8rem;
+}
+.svc h3{font-family:'Oswald',sans-serif;font-size:1.15rem;letter-spacing:.5px;margin-bottom:10px;color:#fff}
+.svc p{font-size:0.88rem;color:var(--muted);line-height:1.75}
+.svc-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
+.tag{font-size:0.72rem;padding:4px 10px;border-radius:100px;background:rgba(248,92,27,0.08);color:var(--fire);border:1px solid rgba(248,92,27,0.15);font-weight:500}
+
+/* ─── WHY US ─── */
+#why{background:var(--dark)}
+.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.why-card{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:var(--radius);padding:28px 24px;text-align:center;
+  transition:all .25s;
+}
+.why-card:hover{border-color:rgba(248,92,27,0.2);background:var(--card2)}
+.why-icon{font-size:2.4rem;margin-bottom:14px}
+.why-card h4{font-family:'Oswald',sans-serif;font-size:1.05rem;letter-spacing:.5px;margin-bottom:8px;color:#fff}
+.why-card p{font-size:0.85rem;color:var(--muted);line-height:1.65}
+
+/* ─── PROCESS ─── */
+#process{background:var(--card)}
+.process-steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0;margin-top:48px;position:relative}
+.process-steps::before{
+  content:'';position:absolute;top:32px;left:calc(12.5% + 16px);right:calc(12.5% + 16px);
+  height:2px;background:linear-gradient(90deg,var(--fire) 0%,rgba(248,92,27,0.1) 100%);
+  z-index:0;
+}
+.step{text-align:center;padding:0 20px;position:relative;z-index:1}
+.step-num{
+  width:64px;height:64px;background:var(--dark);border:2px solid var(--fire);
+  border-radius:50%;display:flex;align-items:center;justify-content:center;
+  font-family:'Oswald',sans-serif;font-size:1.4rem;color:var(--fire);
+  margin:0 auto 18px;
+}
+.step h4{font-family:'Oswald',sans-serif;font-size:1rem;margin-bottom:8px;color:#fff;letter-spacing:.5px}
+.step p{font-size:0.82rem;color:var(--muted);line-height:1.65}
+
+/* ─── CONTACT ─── */
+#contact{background:var(--dark)}
+.contact-layout{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.contact-cards{display:flex;flex-direction:column;gap:14px}
+.c-card{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:var(--radius);padding:20px 22px;
+  display:flex;align-items:center;gap:18px;
+  transition:all .2s;text-decoration:none;color:inherit;
+}
+.c-card:hover{border-color:rgba(248,92,27,0.25);background:var(--card2)}
+.c-icon{
+  width:48px;height:48px;border-radius:10px;background:rgba(248,92,27,0.1);
+  display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0;
+}
+.c-card-label{font-size:0.72rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted);margin-bottom:3px}
+.c-card-value{font-size:1rem;font-weight:600;color:#fff}
+.wa-big{
+  display:flex;align-items:center;justify-content:center;gap:12px;
+  background:#128C7E;color:#fff;text-decoration:none;
+  padding:16px;border-radius:var(--radius);font-weight:600;font-size:1.05rem;
+  transition:all .2s;margin-top:8px;
+  box-shadow:0 4px 20px rgba(18,140,126,0.3);
+}
+.wa-big:hover{background:#0d7a6e;transform:translateY(-2px)}
+.map-wrap{border-radius:var(--radius);overflow:hidden;border:1px solid var(--border);height:420px}
+.map-wrap iframe{width:100%;height:100%;display:block;border:none}
+
+/* ─── FOOTER ─── */
+footer{
+  background:#09090f;padding:48px;
+  border-top:1px solid var(--border);
+}
+.footer-inner{
+  display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:48px;margin-bottom:40px;
+}
+.f-brand img{width:52px;height:52px;border-radius:50%;border:2px solid var(--fire);margin-bottom:14px}
+.f-brand h3{font-family:'Oswald',sans-serif;font-size:1.1rem;letter-spacing:1.5px;color:#fff;margin-bottom:6px}
+.f-brand p{font-size:0.85rem;color:var(--muted);line-height:1.7;max-width:240px}
+.f-col h4{font-family:'Oswald',sans-serif;font-size:0.9rem;letter-spacing:1px;color:var(--fire);margin-bottom:16px;text-transform:uppercase}
+.f-col ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.f-col ul li{font-size:0.85rem;color:var(--muted)}
+.f-col ul a{color:var(--muted);text-decoration:none;transition:color .2s}
+.f-col ul a:hover{color:var(--fire)}
+.footer-bottom{
+  padding-top:28px;border-top:1px solid var(--border);
+  display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;
+}
+.footer-bottom p{font-size:0.8rem;color:var(--muted)}
+.footer-credit{font-size:0.8rem;color:var(--muted)}
+.footer-credit a{color:var(--fire);text-decoration:none;font-weight:600}
+.footer-credit a:hover{text-decoration:underline}
+
+/* ─── FLOATING CTA ─── */
+.float-wa{
+  position:fixed;bottom:28px;right:28px;z-index:900;
+  background:#25D366;color:#fff;text-decoration:none;
+  width:58px;height:58px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;font-size:1.6rem;
+  box-shadow:0 4px 20px rgba(37,211,102,0.5);
+  transition:all .2s;
+  animation:floatpulse 2s infinite;
+}
+.float-wa:hover{transform:scale(1.12);box-shadow:0 6px 28px rgba(37,211,102,0.7)}
+@keyframes floatpulse{0%,100%{box-shadow:0 4px 20px rgba(37,211,102,0.5)}50%{box-shadow:0 4px 32px rgba(37,211,102,0.8)}}
+
+/* ─── RESPONSIVE ─── */
+@media(max-width:900px){
+  nav{padding:0 20px}
+  .nav-links,.nav-cta{display:none}
+  .hamburger{display:flex}
+  .hero{grid-template-columns:1fr;padding:100px 24px 60px;gap:40px;text-align:center}
+  .hero-visual{order:-1}
+  .hero h1,.hero-desc{text-align:center}
+  .hero-actions{justify-content:center}
+  .hero-stats{margin:0 auto}
+  .hero-stats .h-stat{padding:14px 20px}
+  section{padding:72px 24px}
+  .contact-layout{grid-template-columns:1fr}
+  .footer-inner{grid-template-columns:1fr;gap:32px}
+  .footer-bottom{flex-direction:column;text-align:center}
+  .process-steps::before{display:none}
+}
+@media(max-width:500px){
+  .hero h1{font-size:2.4rem}
+  .hero-stats{flex-direction:column;width:100%}
+  .h-stat:not(:last-child){border-right:none;border-bottom:1px solid var(--border)}
+}
+</style>
+</head>
+<body>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/919846058976" class="float-wa" target="_blank" title="Chat on WhatsApp">💬</a>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-brand">
+    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAFWAYADASIAAhEBAxEB/8QAHQABAAEFAQEBAAAAAAAAAAAAAAcCAwQGCAUBCf/EAEYQAAEDAwEFBAUJBQUJAQAAAAEAAgMEBREGBxIhMUETIlFhMnGBkaEIFBUjQlKxwdEzYnKi8CVDY4LhFiQ0NVNUc5Kywv/EABoBAQEBAQEBAQAAAAAAAAAAAAABAgMFBAb/xAAkEQEBAAIBBAMAAgMAAAAAAAAAAQIRAwQSITEFE0EiMmFxsf/aAAwDAQACEQMRAD8A5kREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBFl0Vuq6w5ijwz77uAXt0dgp48OqHumd4Dg1BrcbHyO3WMc5x6NGSs6CzV8vExCMeLzj4c1Ilh0jeK9g+j7W6OE/3jmiNh88nn7MrcbZsulcA65XNjPFkDM/zHH4KzG1NoYi067nLVAeTW5+KyY9P0TfSfM8/wAQH5LoOg2eaap/2lNNVHxmlP4NwF7dLpyxU7QIbPQtx1MDSfeRla7Km3M7bJbhzhcfW8r79DW3/t/53fquqIKSmhH1VPDGP3WALI3QRggEK/WbcmusdvPKN7fU8qxJp6lPoTTN9eCus5bfQz/tqKmk/jiafxCwKvSOm6sfXWSiHnHEIz724T6zblGbTsw/ZVDH/wAQLf1WBUWuugyX07iPFve/BdQ3HZdpyoDjTGro3HkGS7zR7HZPxWq3fZPdoA59trqesaOTJAYnn8R8Qs3Crtz4QQcHgUUkai0vXUDyy82iWHoJHM4H1PHA+wrVq3T44upJf8j/ANVk28BFdqqaemfuTxOYemeR9RVpFEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERARF6NptUtad9+Y4R9rHE+pBh0tNPVS9nBGXnr4D1rY7bY4YS19RieXoMd0ezqtk0rpuruUopLXTARtI7SU8Gs83Hx+KlzSuj7ZZGtmLRVVnWaRvon90dPXzVmNqbaDpvQd1uTWS1QFBTHkXt75Hk39cKRrBpCyWkNdFSiecf30/fdny6D2Be81qutausxkZGtVbWr61quNatA1qra1fQFW1qD4GqtrFUGqsNRVAYqg1XA1fd1BRur7uK4GqrdU2jHlhjmjdFLG2RjhhzXDII8wtL1LsysV0D5aFptlSeOYRmMnzZ+mFvm6mE8VXNmsNEXmxNcLhRtqKMnhPGN6P29Wn1qP7lYcZkojn/DcfwK7SfG17HMe0Oa4YIIyCPBRxrfZfR14fW2Dco6ri51OeEUnq+4fh6lzyx16NuV5GOjeWPaWuBwQRghfFvepLBLFUyUVypZKSrj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DgPBvd/BZ7qab1f9SVdY4vu91klPMMc/gPU0cB7AtYrdQDi2ki/zv/ReASScniUWV0u1VTPUv355XPPTPIeoK1koiKqZI5jg5pLXA5BBwQVL2wDaVcLTqqCzXy6VFRaq8iFpqJXPFPKT3SMnutJOD045PJQ+vrTxXbh5suLOZRjk45njqv0HRQLo/b1aLfoKlivVPWVV7pWdh2cY4ThoAa8vPAZHPmcgnHEKPtaba9Z6gD6emqmWaicC3sqPIe4fvSHvZ6d3dB8F72fyHDjjLvby8el5LdOu0XFGjNpWr9KzNNuu0ktPnLqWqzLE/gByJyOQ4tIPDmpo018oay1FDP8AT1rnoqyOJ74+wPaRTOAJazPNpPAZIIzxJAU4vkeLP34Xk6Tkx9eVfymNoNTZKWHS9krZKevqWCWqliOHRxZOGh4OWuJBzw5eGePNVXV1FXO6eqnlqJXElz5XlziScnJPmVlakvFdf73V3i5SiWrqpN+VwbgeAAHQAAD2Lzl4vVdRebO38ehw8U48dPuSviIvmdhERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQfclfERAQEhEQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERB//2Q==" alt="MS Logo"/>
+    <div class="nav-brand-text">
+      <strong>MS GAS SERVICE</strong>
+      <span>Cherthala · Kerala</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#process">How It Works</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="tel:09037769378" class="nav-cta">📞 Call Now</a>
+  <button class="hamburger" onclick="document.getElementById('mmenu').classList.toggle('open')" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mmenu">
+  <a href="#services" onclick="document.getElementById('mmenu').classList.remove('open')">Services</a>
+  <a href="#why" onclick="document.getElementById('mmenu').classList.remove('open')">Why Us</a>
+  <a href="#process" onclick="document.getElementById('mmenu').classList.remove('open')">How It Works</a>
+  <a href="#contact" onclick="document.getElementById('mmenu').classList.remove('open')">Contact</a>
+  <a href="tel:09037769378" style="color:var(--fire);font-weight:700">📞 090377 69378</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid-lines"></div>
+  <div class="hero-content">
+    <div class="hero-tag"><span class="live-dot"></span> 24-Hour Emergency Service</div>
+    <h1>Gas Stove<br><em>Repair &</em><br>Pipeline<br>Experts</h1>
+    <p class="hero-desc">Trusted since 2015. We fix all types of gas stoves and install pipelines across Cherthala, Kerala — fast, safe, and at your doorstep.</p>
+    <div class="hero-actions">
+      <a href="tel:09037769378" class="btn-fire">📞 090377 69378</a>
+      <a href="https://wa.me/919846058976" class="btn-wa" target="_blank">💬 WhatsApp</a>
+    </div>
+    <div class="hero-stats">
+      <div class="h-stat">
+        <div class="h-stat-num">10+</div>
+        <div class="h-stat-label">Years</div>
+      </div>
+      <div class="h-stat">
+        <div class="h-stat-num">24H</div>
+        <div class="h-stat-label">Available</div>
+      </div>
+      <div class="h-stat">
+        <div class="h-stat-num">All</div>
+        <div class="h-stat-label">Locations</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <!-- SVG Gas Stove Illustration -->
+    <svg viewBox="0 0 480 440" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="glowFire" cx="50%" cy="80%" r="50%">
+          <stop offset="0%" stop-color="#ffa33a" stop-opacity="0.5"/>
+          <stop offset="100%" stop-color="#f85c1b" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="burnerGlow" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#ff6b1b" stop-opacity="0.6"/>
+          <stop offset="100%" stop-color="#f85c1b" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="stoveGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#2a2a3a"/>
+          <stop offset="100%" stop-color="#16161f"/>
+        </linearGradient>
+        <linearGradient id="knobGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#444"/>
+          <stop offset="100%" stop-color="#222"/>
+        </linearGradient>
+        <filter id="glow">
+          <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+          <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+
+      <!-- Background glow -->
+      <ellipse cx="240" cy="320" rx="200" ry="80" fill="url(#glowFire)" opacity="0.6"/>
+
+      <!-- Stove body -->
+      <rect x="60" y="180" width="360" height="220" rx="16" fill="url(#stoveGrad)" stroke="#333" stroke-width="1.5"/>
+      <!-- Top surface -->
+      <rect x="60" y="155" width="360" height="40" rx="10" fill="#222230" stroke="#333" stroke-width="1"/>
+      <!-- Surface highlight -->
+      <rect x="70" y="158" width="340" height="6" rx="3" fill="rgba(255,255,255,0.04)"/>
+
+      <!-- Grid lines on surface -->
+      <line x1="240" y1="155" x2="240" y2="195" stroke="#333" stroke-width="1"/>
+      <line x1="60" y1="175" x2="420" y2="175" stroke="#333" stroke-width="1"/>
+
+      <!-- Burner ring LEFT -->
+      <circle cx="155" cy="260" r="55" fill="none" stroke="#333" stroke-width="2"/>
+      <circle cx="155" cy="260" r="42" fill="#1a1a25" stroke="#2a2a3a" stroke-width="1"/>
+      <circle cx="155" cy="260" r="28" fill="#111118" stroke="#333" stroke-width="1.5"/>
+      <!-- Burner center -->
+      <circle cx="155" cy="260" r="14" fill="#1e1e2a"/>
+      <!-- Burner glow -->
+      <circle cx="155" cy="260" r="55" fill="url(#burnerGlow)" opacity="0.4"/>
+
+      <!-- Flames LEFT -->
+      <g filter="url(#glow)">
+        <path d="M155 240 Q158 228 162 220 Q157 230 165 235 Q160 225 168 218 Q163 232 170 240 Q165 230 165 244" fill="#ffa33a" opacity="0.9"/>
+        <path d="M155 240 Q152 228 148 220 Q153 230 145 235 Q150 225 142 218 Q147 232 140 240 Q145 230 145 244" fill="#f85c1b" opacity="0.85"/>
+        <path d="M140 255 Q130 250 124 244 Q132 250 130 258 Q127 248 120 248 Q130 254 128 264" fill="#f85c1b" opacity="0.8"/>
+        <path d="M170 255 Q180 250 186 244 Q178 250 180 258 Q183 248 190 248 Q180 254 182 264" fill="#ffa33a" opacity="0.8"/>
+        <path d="M155 240 Q162 234 166 245 Q158 238 160 250 Q155 242 152 250 Q154 238 148 246 Q152 234 155 240" fill="#fff" opacity="0.3"/>
+      </g>
+
+      <!-- Burner ring RIGHT -->
+      <circle cx="325" cy="260" r="55" fill="none" stroke="#333" stroke-width="2"/>
+      <circle cx="325" cy="260" r="42" fill="#1a1a25" stroke="#2a2a3a" stroke-width="1"/>
+      <circle cx="325" cy="260" r="28" fill="#111118" stroke="#333" stroke-width="1.5"/>
+      <circle cx="325" cy="260" r="14" fill="#1e1e2a"/>
+      <circle cx="325" cy="260" r="55" fill="url(#burnerGlow)" opacity="0.35"/>
+
+      <!-- Flames RIGHT (smaller) -->
+      <g filter="url(#glow)" opacity="0.7">
+        <path d="M325 242 Q328 232 331 225 Q327 234 334 238 Q330 228 337 222 Q332 235 338 242 Q333 232 334 246" fill="#ffa33a"/>
+        <path d="M325 242 Q322 232 319 225 Q323 234 316 238 Q320 228 313 222 Q318 235 312 242 Q317 232 316 246" fill="#f85c1b"/>
+        <path d="M312 256 Q302 252 297 246 Q305 252 303 259 Q300 250 294 251 Q304 255 302 265" fill="#f85c1b" opacity="0.8"/>
+        <path d="M338 256 Q348 252 353 246 Q345 252 347 259 Q350 250 356 251 Q346 255 348 265" fill="#ffa33a" opacity="0.8"/>
+      </g>
+
+      <!-- Control panel -->
+      <rect x="80" y="345" width="320" height="40" rx="6" fill="#1a1a22" stroke="#2a2a35" stroke-width="1"/>
+
+      <!-- Knobs -->
+      <circle cx="130" cy="365" r="13" fill="url(#knobGrad)" stroke="#444" stroke-width="1"/>
+      <circle cx="130" cy="365" r="7" fill="#333" stroke="#555" stroke-width="1"/>
+      <line x1="130" y1="358" x2="130" y2="362" stroke="#f85c1b" stroke-width="2" stroke-linecap="round"/>
+
+      <circle cx="185" cy="365" r="13" fill="url(#knobGrad)" stroke="#444" stroke-width="1"/>
+      <circle cx="185" cy="365" r="7" fill="#333" stroke="#555" stroke-width="1"/>
+      <line x1="185" y1="358" x2="189" y2="361" stroke="#ffa33a" stroke-width="2" stroke-linecap="round"/>
+
+      <circle cx="240" cy="365" r="13" fill="url(#knobGrad)" stroke="#444" stroke-width="1"/>
+      <circle cx="240" cy="365" r="7" fill="#333" stroke="#555" stroke-width="1"/>
+      <line x1="240" y1="358" x2="243" y2="362" stroke="#666" stroke-width="2" stroke-linecap="round"/>
+
+      <circle cx="295" cy="365" r="13" fill="url(#knobGrad)" stroke="#444" stroke-width="1"/>
+      <circle cx="295" cy="365" r="7" fill="#333" stroke="#555" stroke-width="1"/>
+      <line x1="295" y1="358" x2="295" y2="362" stroke="#666" stroke-width="2" stroke-linecap="round"/>
+
+      <circle cx="350" cy="365" r="13" fill="url(#knobGrad)" stroke="#444" stroke-width="1"/>
+      <circle cx="350" cy="365" r="7" fill="#333" stroke="#555" stroke-width="1"/>
+      <line x1="350" y1="358" x2="346" y2="362" stroke="#666" stroke-width="2" stroke-linecap="round"/>
+
+      <!-- Bottom legs -->
+      <rect x="90" y="390" width="14" height="28" rx="4" fill="#1a1a22"/>
+      <rect x="376" y="390" width="14" height="28" rx="4" fill="#1a1a22"/>
+
+      <!-- Gas pipe at bottom -->
+      <rect x="195" y="400" width="90" height="10" rx="5" fill="#1e1e2a" stroke="#333" stroke-width="1"/>
+      <ellipse cx="240" cy="405" rx="12" ry="5" fill="#333"/>
+
+      <!-- Brand text on stove -->
+      <text x="240" y="330" text-anchor="middle" font-family="Georgia,serif" font-size="13" fill="rgba(255,255,255,0.12)" letter-spacing="4">MS GAS SERVICE</text>
+
+      <!-- Floating badge top right -->
+      <g transform="translate(340, 60)">
+        <rect width="110" height="70" rx="12" fill="#f85c1b" opacity="0.12" stroke="#f85c1b" stroke-width="1" stroke-opacity="0.4"/>
+        <text x="55" y="26" text-anchor="middle" font-family="Arial" font-size="22">⚡</text>
+        <text x="55" y="46" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#ffa33a" font-weight="bold">24 HOURS</text>
+        <text x="55" y="62" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.5)">AVAILABLE</text>
+      </g>
+
+      <!-- Floating badge top left -->
+      <g transform="translate(30, 80)">
+        <rect width="110" height="70" rx="12" fill="#22c55e" opacity="0.1" stroke="#22c55e" stroke-width="1" stroke-opacity="0.3"/>
+        <text x="55" y="26" text-anchor="middle" font-family="Arial" font-size="22">🛡️</text>
+        <text x="55" y="46" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#22c55e" font-weight="bold">CERTIFIED</text>
+        <text x="55" y="62" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.5)">SINCE 2015</text>
+      </g>
+    </svg>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-head">
+    <div class="section-tag">What We Do</div>
+    <h2 class="section-title">Our Services</h2>
+    <p class="section-sub">From home kitchens to commercial hotels — we repair, service, and install everything gas-related.</p>
+    <div class="divider"></div>
+  </div>
+  <div class="services-grid">
+    <div class="svc">
+      <div class="svc-icon">🔥</div>
+      <h3>Steel Stove Repair</h3>
+      <p>Full servicing of all steel gas stoves — burner cleaning, valve replacement, and ignition fixes done at your location.</p>
+      <div class="svc-tags"><span class="tag">All Brands</span><span class="tag">Doorstep</span></div>
+    </div>
+    <div class="svc">
+      <div class="svc-icon">🍳</div>
+      <h3>Glass Top & Hob Service</h3>
+      <p>Expert repair of glass top stoves and built-in hobs. Safe glass handling and electronic ignition system servicing.</p>
+      <div class="svc-tags"><span class="tag">Glass Top</span><span class="tag">Hob</span></div>
+    </div>
+    <div class="svc">
+      <div class="svc-icon">🏨</div>
+      <h3>Cooking Range & Hotel Stoves</h3>
+      <p>Heavy-duty commercial cooking range servicing for restaurants, hotels, and canteens. Quick turnaround guaranteed.</p>
+      <div class="svc-tags"><span class="tag">Commercial</span><span class="tag">Hotel</span></div>
+    </div>
+    <div class="svc">
+      <div class="svc-icon">🔧</div>
+      <h3>Gas Pipeline Installation</h3>
+      <p>Professional pipeline installation for homes and businesses using high-quality copper pipe and MS pipe.</p>
+      <div class="svc-tags"><span class="tag">Copper Pipe</span><span class="tag">MS Pipe</span></div>
+    </div>
+    <div class="svc">
+      <div class="svc-icon">🏠</div>
+      <h3>Residential Gas Setup</h3>
+      <p>Complete gas setup for new homes — new connections, kitchen gas line upgrades, and safety checks.</p>
+      <div class="svc-tags"><span class="tag">Homes</span><span class="tag">Apartments</span></div>
+    </div>
+    <div class="svc">
+      <div class="svc-icon">🏭</div>
+      <h3>Commercial Projects</h3>
+      <p>Large-scale gas pipeline projects for factories, institutions, and commercial buildings across the region.</p>
+      <div class="svc-tags"><span class="tag">Industrial</span><span class="tag">Large-scale</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why">
+  <div class="section-head">
+    <div class="section-tag">Why Choose Us</div>
+    <h2 class="section-title">Trusted by Hundreds</h2>
+    <p class="section-sub">We've been Cherthala's go-to gas repair experts since 2015. Here's what makes us different.</p>
+    <div class="divider"></div>
+  </div>
+  <div class="why-grid">
+    <div class="why-card">
+      <div class="why-icon">⚡</div>
+      <h4>24-Hour Availability</h4>
+      <p>Gas emergencies don't follow a schedule. We're available round the clock, every single day of the year.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">📍</div>
+      <h4>All Locations Covered</h4>
+      <p>We travel to all locations across Cherthala, Alappuzha, and surrounding areas — no extra distance charges.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">🛡️</div>
+      <h4>Safe & Reliable Work</h4>
+      <p>All installations and repairs follow strict safety standards. Your family's safety is our first priority, always.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">🏆</div>
+      <h4>10+ Years Experience</h4>
+      <p>Established in 2015 with deep expertise across all gas stove types and pipeline systems.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">💰</div>
+      <h4>Fair Pricing</h4>
+      <p>Transparent, honest pricing with no hidden charges. You know exactly what you pay before we begin.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">🔁</div>
+      <h4>All Stove Types</h4>
+      <p>Steel stoves, glass tops, hobs, cooking ranges, hotel stoves — we service every type, every brand.</p>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="process">
+  <div class="section-head">
+    <div class="section-tag">Simple Process</div>
+    <h2 class="section-title">How It Works</h2>
+    <p class="section-sub">Getting your gas stove fixed or pipeline installed is simple and fast.</p>
+    <div class="divider"></div>
+  </div>
+  <div class="process-steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <h4>Call or WhatsApp</h4>
+      <p>Reach out anytime — day or night. Tell us about your problem or requirement.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <h4>We Come to You</h4>
+      <p>Our technician arrives at your location, tools in hand, ready to assess and work.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <h4>Quick Fix</h4>
+      <p>We diagnose and repair on the spot. Most repairs are completed in a single visit.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <h4>All Done ✓</h4>
+      <p>Your stove or pipeline is safe and working. We leave only when you're satisfied.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-head">
+    <div class="section-tag">Get In Touch</div>
+    <h2 class="section-title">Contact Us</h2>
+    <p class="section-sub">Call, WhatsApp, or visit us. We're always ready to help — 24 hours a day.</p>
+    <div class="divider"></div>
+  </div>
+  <div class="contact-layout">
+    <div class="contact-cards">
+      <a href="tel:09037769378" class="c-card">
+        <div class="c-icon">📞</div>
+        <div>
+          <div class="c-card-label">Phone — Call Anytime</div>
+          <div class="c-card-value">090377 69378</div>
+        </div>
+      </a>
+      <a href="https://wa.me/919846058976" class="c-card" target="_blank">
+        <div class="c-icon">💬</div>
+        <div>
+          <div class="c-card-label">WhatsApp</div>
+          <div class="c-card-value">+91 98460 58976</div>
+        </div>
+      </a>
+      <div class="c-card">
+        <div class="c-icon">📍</div>
+        <div>
+          <div class="c-card-label">Address</div>
+          <div class="c-card-value" style="font-size:0.9rem">Veliyil House, Pattanakkad,<br>Cherthala, Kerala 688531</div>
+        </div>
+      </div>
+      <div class="c-card">
+        <div class="c-icon">🕐</div>
+        <div>
+          <div class="c-card-label">Working Hours</div>
+          <div class="c-card-value">24 Hours / 7 Days a Week</div>
+        </div>
+      </div>
+      <a href="https://wa.me/919846058976" class="wa-big" target="_blank">
+        💬 &nbsp;Chat on WhatsApp Now
+      </a>
+    </div>
+    <div class="map-wrap">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.5261397773287!2d76.33230731478344!3d9.89382499296987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b08721ebb9eb3b7%3A0x20e559fda85b96b3!2sPattanakkad%2C%20Kerala%20688531!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="MS Gas Service Location">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="f-brand">
+      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/wAARCAFWAYADASIAAhEBAxEB/8QAHQABAAEFAQEBAAAAAAAAAAAAAAcCAwQGCAUBCf/EAEYQAAEDAwEFBAUJBQUJAQAAAAEAAgMEBREGBxIhMUETIlFhMnGBkaEIFBUjQlKxwdEzYnKi8CVDY4LhFiQ0NVNUc5Kywv/EABoBAQEBAQEBAQAAAAAAAAAAAAABAgMFBAb/xAAkEQEBAAIBBAMAAgMAAAAAAAAAAQIRAwQSITEFE0EiMmFxsf/aAAwDAQACEQMRAD8A5kREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBFl0Vuq6w5ijwz77uAXt0dgp48OqHumd4Dg1BrcbHyO3WMc5x6NGSs6CzV8vExCMeLzj4c1Ilh0jeK9g+j7W6OE/3jmiNh88nn7MrcbZsulcA65XNjPFkDM/zHH4KzG1NoYi067nLVAeTW5+KyY9P0TfSfM8/wAQH5LoOg2eaap/2lNNVHxmlP4NwF7dLpyxU7QIbPQtx1MDSfeRla7Km3M7bJbhzhcfW8r79DW3/t/53fquqIKSmhH1VPDGP3WALI3QRggEK/WbcmusdvPKN7fU8qxJp6lPoTTN9eCus5bfQz/tqKmk/jiafxCwKvSOm6sfXWSiHnHEIz724T6zblGbTsw/ZVDH/wAQLf1WBUWuugyX07iPFve/BdQ3HZdpyoDjTGro3HkGS7zR7HZPxWq3fZPdoA59trqesaOTJAYnn8R8Qs3Crtz4QQcHgUUkai0vXUDyy82iWHoJHM4H1PHA+wrVq3T44upJf8j/ANVk28BFdqqaemfuTxOYemeR9RVpFEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERARF6NptUtad9+Y4R9rHE+pBh0tNPVS9nBGXnr4D1rY7bY4YS19RieXoMd0ezqtk0rpuruUopLXTARtI7SU8Gs83Hx+KlzSuj7ZZGtmLRVVnWaRvon90dPXzVmNqbaDpvQd1uTWS1QFBTHkXt75Hk39cKRrBpCyWkNdFSiecf30/fdny6D2Be81qutausxkZGtVbWr61quNatA1qra1fQFW1qD4GqtrFUGqsNRVAYqg1XA1fd1BRur7uK4GqrdU2jHlhjmjdFLG2RjhhzXDII8wtL1LsysV0D5aFptlSeOYRmMnzZ+mFvm6mE8VXNmsNEXmxNcLhRtqKMnhPGN6P29Wn1qP7lYcZkojn/DcfwK7SfG17HMe0Oa4YIIyCPBRxrfZfR14fW2Dco6ri51OeEUnq+4fh6lzyx16NuV5GOjeWPaWuBwQRghfFvepLBLFUyUVypZKSrj4Hebhw/ULTK+jmopuzmbwPouHJyw0x0REBERAREQEREBERAREQEREBERAREQEREBERAREQERetYbZ86d84nH1LTwH3z+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I5jg5pLXA5BBwQVL2wDaVcLTqqCzXy6VFRaq8iFpqJXPFPKT3SMnutJOD045PJQ+vrTxXbh5suLOZRjk45njqv0HRQLo/b1aLfoKlivVPWVV7pWdh2cY4ThoAa8vPAZHPmcgnHEKPtaba9Z6gD6emqmWaicC3sqPIe4fvSHvZ6d3dB8F72fyHDjjLvby8el5LdOu0XFGjNpWr9KzNNuu0ktPnLqWqzLE/gByJyOQ4tIPDmpo018oay1FDP8AT1rnoqyOJ74+wPaRTOAJazPNpPAZIIzxJAU4vkeLP34Xk6Tkx9eVfymNoNTZKWHS9krZKevqWCWqliOHRxZOGh4OWuJBzw5eGePNVXV1FXO6eqnlqJXElz5XlziScnJPmVlakvFdf73V3i5SiWrqpN+VwbgeAAHQAAD2Lzl4vVdRebO38ehw8U48dPuSviIvmdhERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQfclfERAQEhEQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERB//2Q==" alt="MS Logo"/>
+      <h3>MS Gas Stove Service</h3>
+      <p>Expert gas stove repairs and pipeline installations across Cherthala, Kerala. Trusted since 2015. Available 24 hours.</p>
+    </div>
+    <div class="f-col">
+      <h4>Services</h4>
+      <ul>
+        <li>Steel Stove Repair</li>
+        <li>Glass Top & Hob Service</li>
+        <li>Cooking Range Repair</li>
+        <li>Pipeline Installation</li>
+        <li>Residential Gas Setup</li>
+        <li>Commercial Projects</li>
+      </ul>
+    </div>
+    <div class="f-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:09037769378">📞 090377 69378</a></li>
+        <li><a href="https://wa.me/919846058976" target="_blank">💬 +91 98460 58976</a></li>
+        <li>Veliyil House, Pattanakkad</li>
+        <li>Cherthala, Kerala 688531</li>
+        <li style="color:var(--green);font-weight:600">🟢 Open 24/7</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 MS Gas Stove Service & Pipeline Installation · Cherthala, Kerala · Since 2015</p>
+    <p class="footer-credit">Website by <a href="https://www.ecom100.in" target="_blank">www.ecom100.in</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
